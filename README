@@ -14,7 +14,7 @@ Uses NetworkManager to idle until the network gets online and runs a given
 command. This is useful for example, if you are updating your system automized
 and don't want miss your daily update, if your network was offline at that time.
 
-Usage: ./run_when_online.py [-p <pid>] <command>
+Usage: ./run_when_online.py [-p <pid_file>] <command>
 
 
 xmessages_monitor.py
