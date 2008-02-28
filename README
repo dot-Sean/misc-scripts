@@ -1,0 +1,31 @@
+randcowsay.sh
+=============
+
+Invokes fortune to generate a random funny message and renders it with cowsay.
+Actually not really useful, but I am using it for my MOTD. ;)
+
+Usage: ./randcowsay.sh
+
+
+run_when_online.py
+==================
+
+Uses NetworkManager to idle until the network gets online and runs a given
+command. This is useful for example, if you are updating your system automized
+and don't want miss your daily update, if your network was offline at that time.
+
+Usage: ./run_when_online.py [-p <pid>] <command>
+
+
+xmessages_monitor.py
+====================
+
+Monitors the directory /var/log/xmessages (make sure you created it before). And
+calls xmessage for each file in the directory and removing it after that. This
+enables you to log messages displayed to the currently logged in user, just by
+creating text files in /var/log/xmessages, without detecting whether X is
+running and which user is currently logged in. Messages logged before running
+xmessages_monitor.py got displayed when you run xmessages_monitor.py the next
+time, so you should ensure, xmessages_monitor.py is called after X started.
+
+Usage: ./xmessages_monitor.py
